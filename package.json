@@ -1,6 +1,6 @@
 {
   "name": "npm-template",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A template for making NPM packages with TypeScript, tests and GitHub workflows.",
   "source": "dist/main.module.js",
   "module": "dist/main.module.js",
@@ -9,7 +9,6 @@
   "author": "rob@tenk.dev",
   "scripts": {
     "build": "microbundle src/main.ts -o dist/ --name main",
-    "dev": "microbundle watch",
     "test": "mocha -r ts-node/register test/**/*.test.ts"
   },
   "license": "MIT",
@@ -18,14 +17,21 @@
     "url": "https://github.com/progging/npm-template"
   },
   "homepage": "https://github.com/progging/npm-template",
-  "keywords": [],
+  "keywords": [
+    "npm",
+    "template"
+  ],
   "devDependencies": {
-    "@types/chai": "^4.2.12",
-    "@types/mocha": "^8.0.2",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
     "chai": "^4.2.0",
-    "microbundle": "^0.12.3",
-    "mocha": "^8.1.1",
-    "ts-node": "^8.10.2",
-    "typescript": "^4.0.2"
+    "eslint": "^7.19.0",
+    "microbundle": "^0.13.0",
+    "mocha": "^8.2.1",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
   }
 }
